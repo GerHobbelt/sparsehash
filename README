@@ -1,7 +1,7 @@
 This directory contains several hash-map implementations, similar in
 API to SGI's hash_map class, but with different performance
 characteristics.  sparse_hash_map uses very little space overhead, 1-2
-bits per entry.  dense_hash_map is very fast, particulary on lookup.
+bits per entry.  dense_hash_map is very fast, particularly on lookup.
 (sparse_hash_set and dense_hash_set are the set versions of these
 routines.)  On the other hand, these classes have requirements that
 may not make them appropriate for all applications.
@@ -96,7 +96,7 @@ Reading in this data is equally simple:
    ht.read_nopointer_data(fp);
 
 The above is sufficient if the key and value do not contain any
-pointers: they are basic C types or agglomorations of basic C types.
+pointers: they are basic C types or agglomerations of basic C types.
 If the key and/or value do contain pointers, you can still store the
 hashtable by replacing write_nopointer_data() with a custom writing
 routine.  See sparse_hash_map.html et al. for more information.
