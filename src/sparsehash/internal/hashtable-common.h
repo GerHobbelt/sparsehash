@@ -47,6 +47,10 @@
 #include <iosfwd>
 #include <stdexcept>                 // For length_error
 
+#ifdef _MSC_VER
+#define __attribute__(x)   /**/
+#endif
+
 _START_GOOGLE_NAMESPACE_
 
 template <bool> struct SparsehashCompileAssert { };
